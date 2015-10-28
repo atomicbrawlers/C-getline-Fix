@@ -1,0 +1,21 @@
+// Example program
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+    string firstName, lastName, fullName;
+    
+    cout << "What is your first name?" << endl;
+    cin >> firstName;
+    cout << "What is your last name?" << endl;
+    cin >> lastName;
+    cout << "Nice to meet you " << firstName << " " << lastName << endl;
+    
+    cout <<"What is your full name?" << endl;
+    getline(cin,fullName); //needed or else getline will be skipped
+    getline(cin,fullName);
+    cout << "Nice to meet you " << fullName;
+
+}
